@@ -187,7 +187,7 @@ else:
 
 if SESSION16:
     Session16 = Client(name="Session16", api_id=API_ID, api_hash=API_HASH, session_string=SESSION16)
-    call_py8 = PyTgCalls(Session16)
+    call_py16 = PyTgCalls(Session16)
 else:
     Session16 = None
     call_py16 = None
@@ -203,8 +203,8 @@ if SESSION18:
     Session18 = Client(name="Session18", api_id=API_ID, api_hash=API_HASH, session_string=SESSION18)
     call_py18 = PyTgCalls(Session18)
 else:
-    Session2 = None
-    call_py2 = None
+    Session18 = None
+    call_py18 = None
 
 if SESSION19:
     Session19 = Client(name="Session19", api_id=API_ID, api_hash=API_HASH, session_string=SESSION19)
