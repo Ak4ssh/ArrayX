@@ -245,7 +245,7 @@ if SESSION24:
     Session24 = Client(name="Session24", api_id=API_ID, api_hash=API_HASH, session_string=SESSION24)
     call_py24 = PyTgCalls(Session24)
 else:
-    Session8)24 = None
+    Session24 = None
     call_py24 = None
 
 if SESSION25:
