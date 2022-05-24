@@ -4,10 +4,19 @@ from pyrogram import idle
 
 from . import (Session, Session2, Session3, Session4,
                Session5, Session6, Session7, Session8,
-               vcbot, hl)
+               Session9, Session10, Session11, Session12,
+               Session13, Session14, Session15, Session16,
+               Session17, Session18, Session19, Session20,
+               Session21, Session22, Session23, Session24,
+               Session25, vcbot, hl)
                
 from . import (call_py1, call_py2, call_py3, call_py4,
-               call_py5, call_py6, call_py7, call_py8)
+               call_py5, call_py6, call_py7, call_py8,            
+               call_py9, call_py10, call_py11, call_py12,
+               call_py13, call_py14, call_py15, call_py16,
+               call_py17, call_py18, call_py19, call_py20,
+               call_py21, call_py22, call_py23, call_py24,
+               call_py25)
 
 
 async def startup():
