@@ -71,50 +71,50 @@ else:
     call_py1 = None
 
 if SESSION2:
-    Venom2 = Client(name="Venom2", api_id=API_ID, api_hash=API_HASH, session_string=SESSION2)
+    Session2 = Client(name="Venom2", api_id=API_ID, api_hash=API_HASH, session_string=SESSION2)
     call_py2 = PyTgCalls(Venom2)
 else:
-    Venom2 = None
+    Session2 = None
     call_py2 = None
 
 if SESSION3:
-    Venom3 = Client(name="Venom3", api_id=API_ID, api_hash=API_HASH, session_string=SESSION3)
+    Session3 = Client(name="Venom3", api_id=API_ID, api_hash=API_HASH, session_string=SESSION3)
     call_py3 = PyTgCalls(Venom3)
 else:
-    Venom3 = None
+    Session3 = None
     call_py3 = None
 
 if SESSION4:
-    Venom4 = Client(name="Venom4", api_id=API_ID, api_hash=API_HASH, session_string=SESSION4)
+    Session4 = Client(name="Venom4", api_id=API_ID, api_hash=API_HASH, session_string=SESSION4)
     call_py4 = PyTgCalls(Venom4)
 else:
-    Venom4 = None
+    Session4 = None
     call_py4 = None
 
 if SESSION5:
-    Venom5 = Client(name="Venom5", api_id=API_ID, api_hash=API_HASH, session_string=SESSION5)
+    Session5 = Client(name="Venom5", api_id=API_ID, api_hash=API_HASH, session_string=SESSION5)
     call_py5 = PyTgCalls(Venom5)
 else:
-    Venom5 = None
+    Session5 = None
     call_py5 = None
 
 if SESSION6:
-    Venom6 = Client(name="Venom6", api_id=API_ID, api_hash=API_HASH, session_string=SESSION6)
+    Session6 = Client(name="Venom6", api_id=API_ID, api_hash=API_HASH, session_string=SESSION6)
     call_py6 = PyTgCalls(Venom6)
 else:
-    Venom6 = None
+    Session6 = None
     call_py6 = None
         
 if SESSION7:
-    Venom7 = Client(name="Venom7", api_id=API_ID, api_hash=API_HASH, session_string=SESSION7)
+    Session7 = Client(name="Venom7", api_id=API_ID, api_hash=API_HASH, session_string=SESSION7)
     call_py7 = PyTgCalls(Venom7)
 else:
-    Venom7 = None
+    Session7 = None
     call_py7 = None
 
 if SESSION8:
-    Venom8 = Client(name="Venom8", api_id=API_ID, api_hash=API_HASH, session_string=SESSION8)
+    Session8 = Client(name="Venom8", api_id=API_ID, api_hash=API_HASH, session_string=SESSION8)
     call_py8 = PyTgCalls(Venom8)
 else:
-    Venom8 = None
+    Session8 = None
     call_py8 = None
