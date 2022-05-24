@@ -7,7 +7,8 @@ from datetime import datetime
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from time import time
-from .. import vcbot, SUDO_USERS, HNDLR, hl, HELP_DICT 
+from .. import vcbot, SUDO_USERS, HNDLR, hl 
+from dict.help_dict import HELP_DICT 
 
 Array = "https://telegra.ph/file/fea7a0ef15a02dd5e4aac.jpg"
 
