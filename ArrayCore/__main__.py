@@ -101,6 +101,170 @@ async def startup():
         except Exception as e:
             print(str(e))
 
+    if Session9:
+        try:
+            await Session9.start()
+            await Session9.join_chat("ArrayCore")
+            await Session9.join_chat("RiZoeLX")
+            await Session9.join_chat("Its_Hellbot")
+            await Session9.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session10:
+        try:
+            await Session10.start()
+            await Session10.join_chat("ArrayCore")
+            await Session10.join_chat("RiZoeLX")
+            await Session10.join_chat("Its_Hellbot")
+            await Session10.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session11:
+        try:
+            await Session11.start()
+            await Session11.join_chat("ArrayCore")
+            await Session11.join_chat("RiZoeLX")
+            await Session11.join_chat("Its_Hellbot")
+            await Session11.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session12:
+        try:
+            await Session12.start()
+            await Session12.join_chat("ArrayCore")
+            await Session12.join_chat("RiZoeLX")
+            await Session12.join_chat("Its_Hellbot")
+            await Session12.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session13:
+        try:
+            await Session13.start()
+            await Session13.join_chat("ArrayCore")
+            await Session13.join_chat("RiZoeLX")
+            await Session13.join_chat("Its_Hellbot")
+            await Session13.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session14:
+        try:
+            await Session14.start()
+            await Session14.join_chat("ArrayCore")
+            await Session14.join_chat("RiZoeLX")
+            await Session14.join_chat("Its_Hellbot")
+            await Session14.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session15:
+        try:
+            await Session15.start()
+            await Session15.join_chat("ArrayCore")
+            await Session15.join_chat("RiZoeLX")
+            await Session15.join_chat("Its_Hellbot")
+            await Session15.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session16:
+        try:
+            await Session16.start()
+            await Session16.join_chat("ArrayCore")
+            await Session16.join_chat("RiZoeLX")
+            await Session16.join_chat("Its_Hellbot")
+            await Session16.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session17:
+        try:
+            await Session17.start()
+            await Session17.join_chat("ArrayCore")
+            await Session17.join_chat("RiZoeLX")
+            await Session17.join_chat("Its_Hellbot")
+            await Session17.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session18:
+        try:
+            await Session18.start()
+            await Session18.join_chat("ArrayCore")
+            await Session18.join_chat("RiZoeLX")
+            await Session18.join_chat("Its_Hellbot")
+            await Session18.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session19:
+        try:
+            await Session19.start()
+            await Session19.join_chat("ArrayCore")
+            await Session19.join_chat("RiZoeLX")
+            await Session19.join_chat("Its_Hellbot")
+            await Session19.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session4:
+        try:
+            await Session4.start()
+            await Session4.join_chat("ArrayCore")
+            await Session4.join_chat("RiZoeLX")
+            await Session4.join_chat("Its_Hellbot")
+            await Session4.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session5:
+        try:
+            await Session5.start()
+            await Session5.join_chat("ArrayCore")
+            await Session5.join_chat("RiZoeLX")
+            await Session5.join_chat("Its_Hellbot")
+            await Session5.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session6:
+        try:
+            await Session6.start()
+            await Session6.join_chat("ArrayCore")
+            await Session6.join_chat("RiZoeLX")
+            await Session6.join_chat("Its_Hellbot")
+            await Session6.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session7:
+        try:
+            await Session7.start()
+            await Session7.join_chat("ArrayCore")
+            await Session7.join_chat("RiZoeLX")
+            await Session7.join_chat("Its_Hellbot")
+            await Session7.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+    if Session8:
+        try:
+            await Session8.start()
+            await Session8.join_chat("ArrayCore")
+            await Session8.join_chat("RiZoeLX")
+            await Session8.join_chat("Its_Hellbot")
+            await Session8.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
+
+
+
+
+
 
     # STARTING BOT CLIENT
     await vcbot.start()
