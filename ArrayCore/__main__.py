@@ -211,59 +211,65 @@ async def startup():
         except Exception as e:
             print(str(e))
 
-    if Session4:
+    if Session20:
         try:
-            await Session4.start()
-            await Session4.join_chat("ArrayCore")
-            await Session4.join_chat("RiZoeLX")
-            await Session4.join_chat("Its_Hellbot")
-            await Session4.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+            await Session20.start()
+            await Session20.join_chat("ArrayCore")
+            await Session20.join_chat("RiZoeLX")
+            await Session20.join_chat("Its_Hellbot")
+            await Session20.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
         except Exception as e:
             print(str(e))
 
-    if Session5:
+    if Session21:
         try:
-            await Session5.start()
-            await Session5.join_chat("ArrayCore")
-            await Session5.join_chat("RiZoeLX")
-            await Session5.join_chat("Its_Hellbot")
-            await Session5.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+            await Session21.start()
+            await Session21.join_chat("ArrayCore")
+            await Session21.join_chat("RiZoeLX")
+            await Session21.join_chat("Its_Hellbot")
+            await Session21.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
         except Exception as e:
             print(str(e))
 
-    if Session6:
+    if Session22:
         try:
-            await Session6.start()
-            await Session6.join_chat("ArrayCore")
-            await Session6.join_chat("RiZoeLX")
-            await Session6.join_chat("Its_Hellbot")
-            await Session6.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+            await Session22.start()
+            await Session22.join_chat("ArrayCore")
+            await Session22.join_chat("RiZoeLX")
+            await Session22.join_chat("Its_Hellbot")
+            await Session22.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
         except Exception as e:
             print(str(e))
 
-    if Session7:
+    if Session23:
         try:
-            await Session7.start()
-            await Session7.join_chat("ArrayCore")
-            await Session7.join_chat("RiZoeLX")
-            await Session7.join_chat("Its_Hellbot")
-            await Session7.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+            await Session23.start()
+            await Session23.join_chat("ArrayCore")
+            await Session23.join_chat("RiZoeLX")
+            await Session23.join_chat("Its_Hellbot")
+            await Session23.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
         except Exception as e:
             print(str(e))
 
-    if Session8:
+    if Session24:
         try:
-            await Session8.start()
-            await Session8.join_chat("ArrayCore")
-            await Session8.join_chat("RiZoeLX")
-            await Session8.join_chat("Its_Hellbot")
-            await Session8.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+            await Session24.start()
+            await Session24.join_chat("ArrayCore")
+            await Session24.join_chat("RiZoeLX")
+            await Session24.join_chat("Its_Hellbot")
+            await Session24.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
         except Exception as e:
             print(str(e))
 
-
-
-
+    if Session25:
+        try:
+            await Session25.start()
+            await Session25.join_chat("ArrayCore")
+            await Session25.join_chat("RiZoeLX")
+            await Session25.join_chat("Its_Hellbot")
+            await Session25.update_profile(bio="A Part Of @ArrayCore & @RiZoelX.") 
+        except Exception as e:
+            print(str(e))
 
 
     # STARTING BOT CLIENT
@@ -296,6 +302,40 @@ async def startup():
         await call_py7.start()
     if call_py8:
         await call_py8.start()
+    if call_py9:
+        await call_py9.start()
+    if call_py10:
+        await call_py10.start()
+    if call_py11:
+        await call_py11.start()
+    if call_py12:
+        await call_py12.start()
+    if call_py13:
+        await call_py13.start()
+    if call_py14:
+        await call_py14.start()
+    if call_py15:
+        await call_py15.start()
+    if call_py16:
+        await call_py16.start()
+    if call_py17:
+        await call_py17.start()
+    if call_py18:
+        await call_py18.start()
+    if call_py19:
+        await call_py19.start()
+    if call_py20:
+        await call_py20.start()
+    if call_py21:
+        await call_py21.start()
+    if call_py22:
+        await call_py22.start()
+    if call_py23:
+        await call_py23.start()
+    if call_py24:
+        await call_py24.start()
+    if call_py25:
+        await call_py25.start()
     
     # STARTUP COMPLETED
     await idle()
