@@ -1,3 +1,5 @@
+HELP_DICT = dict()
+
 HELP_DICT["Music Player"] = f"""
 **Basic music player commands!**
 
