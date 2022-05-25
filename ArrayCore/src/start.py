@@ -10,6 +10,8 @@ from time import time
 from .. import vcbot, SUDO_USERS, HNDLR, hl 
 from Dict.help_dict import HELP_DICT 
 
+HELP = f"""Click The Button Below To Get All Commands 👀."""
+
 Array = "https://telegra.ph/file/fea7a0ef15a02dd5e4aac.jpg"
 hehe = "/"
 @vcbot.on_message(filters.private & filters.incoming & filters.command(['start'], prefixes=hehe))
