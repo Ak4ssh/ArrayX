@@ -1,3 +1,5 @@
+from .. import hl
+
 HELP_DICT = dict()
 
 HELP_DICT["Music Player"] = f"""
