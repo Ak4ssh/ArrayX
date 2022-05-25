@@ -34,7 +34,7 @@ HELP_DICT["VC Raid"] = f"""
     ~ `!vcraid` [If in a group.]
 
 **Explanation:**
-    ▪︎First Join All Your Id's In The Group By {hl}join `@chatusername` if chat is private Then {hl}join `https://t.me/+rNTg-asHGZYzODY1` \n Then Do {hl}raid In Groups 
+    ▪︎First Join All Your Id's In The Group By !join `@chatusername` if chat is private Then !join `https://t.me/+rNTg-asHGZYzODY1` \n Then Do !raid In Groups 
 
 **Command:** `!raidend`
 **Usage:** __Stops the voice chat raid and leaves voice chat.__
