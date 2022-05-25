@@ -19,8 +19,7 @@ from Queue.queues import QUEUE, add_to_queue, get_queue, clear_queue
 from .. import (Session, Session2, Session3, Session4, Session5)
 
 from .. import (call_py1, call_py2, call_py3, call_py4,
-                 call_py5, vcbot, HNDLR, SUDO_USERS,
-                 Venom1)
+                 call_py5, vcbot, HNDLR, SUDO_USERS)
 
 logging.basicConfig(level=logging.INFO)
 
