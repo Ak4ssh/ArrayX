@@ -12,6 +12,7 @@ from time import time
 from .. import vcbot, SUDO_USERS, HNDLR, hl 
 from Dict.tools_dict import TOOL_DICT 
 
+TOOL = f"""Click The Button Below To Get Tool Commands ⚙."""
 
 @vcbot.on_message(filters.command(["tools"], prefixes=HNDLR))
 async def tools_(client: vcbot, e: Message):
