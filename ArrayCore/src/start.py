@@ -11,8 +11,8 @@ from .. import vcbot, SUDO_USERS, HNDLR, hl
 from dict.help_dict import HELP_DICT 
 
 Array = "https://telegra.ph/file/fea7a0ef15a02dd5e4aac.jpg"
-
-@vcbot.on_message(filters.private & filters.incoming & filters.command(['start'], prefixes=/))
+hehe = /
+@vcbot.on_message(filters.private & filters.incoming & filters.command(['start'], prefixes=hehe))
 async def _start(_, ok: Message):
         Array_msg = f"**Hello [{ok.from_user.first_name}](tg://user?id={ok.from_user.id}) !** \n\n __ • I'm ArrayCore An Advance And Simple Group Voice Call Bot__ \n\n **Click Below Buttons for More Info**"
         await ok.reply_photo(
