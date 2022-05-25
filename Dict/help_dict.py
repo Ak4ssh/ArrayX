@@ -6,7 +6,7 @@ HELP_DICT["Music Player"] = f"""
 
 **Command:** `!play`
 **Usage:** __Plays the song in voice chat. Supports replied audio, Youtube link or just a keyword to search.__
-**Example:** `{hl}play Closer`
+**Example:** `!play Closer`
 
 **Command:** `!end`
 **Usage:** __Ends the music stream and leaves the voice chat.__
