@@ -10,7 +10,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from time import time
 from .. import vcbot, SUDO_USERS, HNDLR, hl 
-from dict.tools_dict import TOOL_DICT 
+from Dict.tools_dict import TOOL_DICT 
 
 
 @vcbot.on_message(filters.command(["tools"], prefixes=HNDLR))
