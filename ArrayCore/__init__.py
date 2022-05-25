@@ -13,7 +13,7 @@ if os.path.exists(".env"):
     
 __version__ = "v1"
 
-APP_ID = int(os.getenv("APP_ID", ""))
+API_ID = int(os.getenv("API_ID", ""))
 API_HASH = os.getenv("API_HASH", "")
 ALIVE_PIC = os.getenv("ALIVE_PIC", "")
 BOT_TOKEN = os.getenv("BOT_TOKEN", None)
