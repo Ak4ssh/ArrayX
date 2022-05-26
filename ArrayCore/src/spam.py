@@ -84,6 +84,7 @@ async def spam(_, e: Message):
                       await Session5.send_message(chat_id, Msgg)
                       await asyncio.sleep(0.3)
               await vcbot.send_message(e.chat.id, f"**Started Spam** \n\n **Group:** `{Group}` \n **IDs:** `{ids}` \n **Spam Message:** `{Msgg}`")
+
            except Exception as ex:
                   await vcbot.send_message(e.chat.id, f"Error: `{ex}`")
-                   print(ex)  
+                  print(ex)  
