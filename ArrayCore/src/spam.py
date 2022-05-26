@@ -31,10 +31,14 @@ async def spam(_, e: Message):
           if Group.startswith("https://t.me/") or Group.startswith("@"):
               if re.search(ChatS.lower(), Group.lower()):
                  await e.reply_text("Sorry !! I can't Spam there")
-              else:
+                 return
+              grpp = Group
+              try:
                  await Session.join_chat(Group)
-                 chat_ = await Session.get_chat(Group)
-                 chat_id = chat_.id
+              except Exception as ex:
+                 print(ex)
+              chat_ = await Session.get_chat(Group)
+              chat_id = chat_.id
           else:
               return await e.reply_text("**Send Group Link or Username**")
           Ans = await vcbot.ask(chat_id=message.chat.id, text="**Send Counts**")
