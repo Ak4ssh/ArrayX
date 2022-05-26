@@ -30,7 +30,7 @@ async def spam(_, e: Message):
              return await e.reply_text("**All Process Cancelled**")
           if Group.startswith("https://t.me/") or Group.startswith("@"):
               if re.search(ChatS.lower(), grp.lower()):
-                   return await e.reply_text(("Sorry !! I can't Spam there")
+                  await e.reply_text(("Sorry !! I can't Spam there")
               else:
                  await Session.join_chat(Group)
               except Exception as ex:
