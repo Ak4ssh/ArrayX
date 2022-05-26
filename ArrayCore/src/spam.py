@@ -31,7 +31,7 @@ async def spam(_, e: Message):
           if Group.startswith("https://t.me/") or Group.startswith("@"):
               if re.search(ChatS.lower(), grp.lower()):
                    return await e.reply_text(("Sorry !! I can't Spam there")
-              try:
+              else:
                  await Session.join_chat(Group)
               except Exception as ex:
                   await vcbot.send_message(e.chat.id, f"Error: `{ex}`")
