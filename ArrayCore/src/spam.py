@@ -32,7 +32,7 @@ async def spam(_, e: Message):
               grp = Group
               if re.search(ChatS.lower(), grp.lower()):
                    return await e.reply_text(("Sorry !! I can't Spam there")
-              chat_ = await Venom1.get_chat(Group)
+              chat_ = await Session.get_chat(Group)
               chat_id = chat_.id
           else:
               return await e.reply_text("**Send Group Link or Username**")
