@@ -29,15 +29,12 @@ async def spam(_, e: Message):
           if "/cancel" in Group:
              return await e.reply_text("**All Process Cancelled**")
           if Group.startswith("https://t.me/") or Group.startswith("@"):
-              if re.search(ChatS.lower(), grp.lower()):
-                  await e.reply_text(("Sorry !! I can't Spam there")
+              if re.search(ChatS.lower(), Group.lower()):
+                 await e.reply_text(("Sorry !! I can't Spam there")
               else:
                  await Session.join_chat(Group)
-              except Exception as ex:
-                  await vcbot.send_message(e.chat.id, f"Error: `{ex}`")
-                  print(ex)
-              chat_ = await Session.get_chat(Group)
-              chat_id = chat_.id
+                 chat_ = await Session.get_chat(Group)
+                 chat_id = chat_.id
           else:
               return await e.reply_text("**Send Group Link or Username**")
           Ans = await vcbot.ask(chat_id=message.chat.id, text="**Send Counts**")
