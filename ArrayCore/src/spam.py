@@ -13,7 +13,7 @@ from .. import (Session, Session2, Session3, Session4,
                Session13, Session14, Session15, Session16,
                Session17, Session18, Session19, Session20,
                Session21, Session22, Session23, Session24,
-               Session25, vcbot, hl, SUDO_USERS)
+               Session25, vcbot, hl, SUDO_USERS, HNDLR)
 
 
 ChatS = ["ArrayCore|RiZoeLXSpam|DNHxHELL|Array|Suzune"]
