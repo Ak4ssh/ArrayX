@@ -38,7 +38,7 @@ async def tools_(client: vcbot, e: Message):
         )
 
         
-@vcbot.on_callback_query(filters.regex(pattern=r"hlplist_(.*)"))
+@vcbot.on_callback_query(filters.regex(pattern=r"toolist_(.*)"))
 async def tool_list_parser(client: vcbot, cq: CallbackQuery):
     await cq.answer()
     user = cq.data.split("_")[1]
@@ -51,7 +51,7 @@ async def tool_dicc_parser(client: vcbot, cq: CallbackQuery):
     await cq.answer()
     _, qry, user = cq.data.split("_")
     text = TOOL_DICT[qry]
-    btn = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back", callback_data=f"hlplist_{user}")]])
+    btn = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Back", callback_data=f"toolist_{user}")]])
     await cq.edit_message_text(text=text, reply_markup=btn, disable_web_page_preview=True)
 
 
