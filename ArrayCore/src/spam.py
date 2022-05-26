@@ -7,7 +7,7 @@ import re
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from . import (Session, Session2, Session3, Session4,
+from .. import (Session, Session2, Session3, Session4,
                Session5, Session6, Session7, Session8,
                Session9, Session10, Session11, Session12,
                Session13, Session14, Session15, Session16,
