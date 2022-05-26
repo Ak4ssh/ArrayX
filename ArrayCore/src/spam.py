@@ -30,7 +30,7 @@ async def spam(_, e: Message):
              return await e.reply_text("**All Process Cancelled**")
           if Group.startswith("https://t.me/") or Group.startswith("@"):
               if re.search(ChatS.lower(), Group.lower()):
-                 await e.reply_text(("Sorry !! I can't Spam there")
+                 await e.reply_text("Sorry !! I can't Spam there")
               else:
                  await Session.join_chat(Group)
                  chat_ = await Session.get_chat(Group)
@@ -50,7 +50,7 @@ async def spam(_, e: Message):
           if "/cancel" in k:
                return await e.reply_text("**All Process Cancelled**")
           if re.search(RiZ.lower(), k.lower()):
-               return await e.reply_text(("Sorry !! I can't Spam on @Arraycore's Owner")
+               return await e.reply_text("Sorry !! I can't Spam on @Arraycore's Owner")
           Msgg = str(k)
           ids = 0
           try:
