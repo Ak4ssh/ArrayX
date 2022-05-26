@@ -48,11 +48,11 @@ async def spam(_, e: Message):
           k = Ask.text
           if "/cancel" in k:
                return await e.reply_text("**All Process Cancelled**")
-           if re.search(RiZ.lower(), k.lower()):
+          if re.search(RiZ.lower(), k.lower()):
                return await e.reply_text(("Sorry !! I can't Spam on @Arraycore's Owner")
-           Msgg = str(k)
-           ids = 0
-           try:
+          Msgg = str(k)
+          ids = 0
+          try:
               if Session:
                    ids += 1
                    Session.join_chat(Group)
@@ -85,6 +85,6 @@ async def spam(_, e: Message):
                       await asyncio.sleep(0.3)
               await vcbot.send_message(e.chat.id, f"**Started Spam** \n\n **Group:** `{Group}` \n **IDs:** `{ids}` \n **Spam Message:** `{Msgg}`")
 
-           except Exception as ex:
+          except Exception as ex:
                   await vcbot.send_message(e.chat.id, f"Error: `{ex}`")
                   print(ex)  
