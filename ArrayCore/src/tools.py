@@ -12,7 +12,7 @@ from time import time
 from .. import vcbot, SUDO_USERS, HNDLR, hl 
 from Dict.tools_dict import TOOL_DICT 
 
-TOOL = f"""Click The Button Below To Get Tool Commands ⚙."""
+TOOL = f"""ArrayCore is here with multifunctioning bot.\n\nClick The Button Below To Get All Valuable Commands."""
 
 @vcbot.on_message(filters.command(["tools"], prefixes=HNDLR))
 async def tools_(client: vcbot, e: Message):
@@ -23,7 +23,7 @@ async def tools_(client: vcbot, e: Message):
     except KeyError:
         await client.send_message(
             gid,
-            text="**Click The Button Below To Get Tool Commands ⚙**",
+            text="ArrayCore is here with multifunctioning bot.\n\nClick The Button Below To Get All Valuable Commands.",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Tools", url=f"https://t.me/{bot_us}/?start=tools")]])
         )
         return
@@ -33,7 +33,7 @@ async def tools_(client: vcbot, e: Message):
     else:
         await client.send_message(
             gid,
-            text="**Click The Button Below to get Tools Menu ⚙.**",
+            text="ArrayCore is here with multifunctioning bot.\n\nClick The Button Below To Get All Valuable Commands.",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Tool", url=f"https://t.me/{bot_us}/?start=tools")]])
         )
 
