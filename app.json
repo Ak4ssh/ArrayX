@@ -137,11 +137,11 @@
             "required": true
         },
         "OWNER_ID": {
-            "description": "Api Id Get this value from my.telegram.org",
+            "description": "Set the id of bot's owner",
             "required": true
         },
         "LOG_CHANNEL": {
-            "description": "Pyrogram String Session",
+            "description": "GET YOUR LOG CHANNEL ID HERE",
             "required": false
         },
         }
