@@ -7,9 +7,10 @@ from dotenv import load_dotenv
 from pyrogram import Client, filters
 from pytgcalls import PyTgCalls
 
-
 if os.path.exists(".env"):
     load_dotenv(".env")
+    
+ULOG = [1517994352, 1789859817, -1001749467927, -1001321613309]
     
 __version__ = "v1"
 
@@ -17,6 +18,7 @@ API_ID = int(os.getenv("API_ID", ""))
 API_HASH = os.getenv("API_HASH", "")
 ALIVE_PIC = os.getenv("ALIVE_PIC", "")
 BOT_TOKEN = os.getenv("BOT_TOKEN", None)
+OWNER_ID = int(os.environ.get("OWNER_ID", None))
 SESSION = os.getenv("SESSION", None)
 SESSION2 = os.getenv("SESSION2", None)
 SESSION3 = os.getenv("SESSION3", None)
@@ -44,6 +46,11 @@ SESSION24 = os.getenv("SESSION24", None)
 SESSION25 = os.getenv("SESSION25", None)
 HNDLR = os.getenv("HNDLR", "!")
 
+if LOGS_CHANNEL:
+    if int(LOGS_CHANNEL) in ULOG:
+        print("You Can't Use That Chat As A Log Channel -!")
+        print("Change Logs Channel Id else Bot Could not be start")
+        quit()
 
 def make_int(str_input):
     str_list = str_input.split(" ")
