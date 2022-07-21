@@ -142,7 +142,7 @@
         },
         "LOG_CHANNEL": {
             "description": "GET YOUR LOG CHANNEL ID HERE",
-            "required": false
+            "required": true
         },
         }
     },
