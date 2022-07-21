@@ -9,7 +9,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from ArrayCore import (OWNER_ID, LOGS_CHANNEL)
 from ArrayCore.resources import data
-usage = f"** ❌ Wrong Usage ❌** \n Type `{HNDLR}help spam`"
+usage = f"** ❌ Wrong Usage ❌**"
 
 
 
