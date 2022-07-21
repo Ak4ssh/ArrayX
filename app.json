@@ -134,7 +134,16 @@
         },
         "SUDO_USERS": {
             "description": "Sudo Users id space by space (Users who can control bot)",
-            "required": true 
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Api Id Get this value from my.telegram.org",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Pyrogram String Session",
+            "required": false
+        },
         }
     },
     "addons": [],
