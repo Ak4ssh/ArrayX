@@ -76,14 +76,19 @@ async def vcraid(_, e: Message):
             await e.reply_text(f"**> Raiding in:** {chat_.title} \n\n**> Audio:** {songname} \n**> Position:** #{pos}")
         else:
             if call_py1:
+                await.Session.join_chat(chat_id)
                 await call_py1.join_group_call(chat_id, AudioPiped(dl), stream_type=StreamType().pulse_stream)
             if call_py2:
+                await.Session2.join_chat(chat_id)
                 await call_py2.join_group_call(chat_id, AudioPiped(dl2), stream_type=StreamType().pulse_stream)
             if call_py3:
+                await.Session3.join_chat(chat_id)
                 await call_py3.join_group_call(chat_id, AudioPiped(dl3), stream_type=StreamType().pulse_stream)
             if call_py4:
+                await.Session4.join_chat(chat_id)                      
                 await call_py4.join_group_call(chat_id, AudioPiped(dl4), stream_type=StreamType().pulse_stream)
             if call_py5:
+                await.Session5.join_chat(chat_id)
                 await call_py5.join_group_call(chat_id, AudioPiped(dl5), stream_type=StreamType().pulse_stream) 
             add_to_queue(chat_id, songname, dl, link, "Audio", 0)
             await TheVenomXD.delete()
