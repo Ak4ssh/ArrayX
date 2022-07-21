@@ -4,11 +4,11 @@ import asyncio
 import re
 from random import choice
 from ArrayCore import hl as HNDLR
-from ArrayCore import sudo as SUDO_USERS
+from ArrayCore import SUDO_USERS
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from ArrayCore import (OWNER_ID, LOGS_CHANNEL)
-
+from ArrayCore.resources import data
 usage = f"** ❌ Wrong Usage ❌** \n Type `{HNDLR}help spam`"
 
 
