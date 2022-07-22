@@ -79,8 +79,11 @@ async def pornspam(xspam: Client, e: Message):
 
 
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
-@Client.on_message(filters.me & filters.command(["raid"], prefixes=HNDLR))
+@Session.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
+@Session2.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
+@Session3.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
+@Session4.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
+@Session5.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
 async def raid(xspam: Client, e: Message):  
       Rizoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
       if len(Rizoel) == 2:
@@ -141,8 +144,11 @@ async def raid(xspam: Client, e: Message):
              print(a)
              pass
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
-@Client.on_message(filters.me & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
+@Session.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
+@Session2.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
+@Session3.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
+@Session4.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
+@Session5.on_message(filters.user(SUDO_USERS) & filters.command(["fspam", "fastspam", "spam", "bigspam"], prefixes=HNDLR))
 async def fastspam(xspam: Client, e: Message):
     Rizoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 1)
     if len(Rizoel) == 2:
@@ -170,8 +176,11 @@ async def fastspam(xspam: Client, e: Message):
              print(a)
              pass
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], prefixes=HNDLR))
-@Client.on_message(filters.me & filters.command(["hang"], prefixes=HNDLR))
+@Session.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], prefixes=HNDLR))
+@Session2.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], prefixes=HNDLR))
+@Session3.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], prefixes=HNDLR))
+@Session4.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], prefixes=HNDLR))
+@Session5.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], prefixes=HNDLR))
 async def hang(xspam: Client, e: Message): 
     counts = e.command[1]
     if not counts:
