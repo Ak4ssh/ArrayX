@@ -10,11 +10,14 @@ from pyrogram.types import Message
 from ArrayCore import (OWNER_ID, LOGS_CHANNEL)
 from ArrayCore.resources import data
 usage = f"** ❌ Wrong Usage ❌**"
+from ArrayCore import Session, Session2, Session3, session4, Session5
 
 
-
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
-@Client.on_message(filters.me & filters.command(["delayspam"], prefixes=HNDLR))
+@Session.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
+@Session2.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
+@Session3.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
+@Session4.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
+@Session5.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
 async def delayspam(xspam: Client, e: Message): 
     Rizoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
     Rizoelop = Rizoel[1:]
@@ -46,8 +49,11 @@ async def delayspam(xspam: Client, e: Message):
 
 
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["pornspam"], prefixes=HNDLR))
-@Client.on_message(filters.me & filters.command(["pornspam"], prefixes=HNDLR))
+@Session.on_message(filters.user(SUDO_USERS) & filters.command(["pornspam"], prefixes=HNDLR))
+@Session2.on_message(filters.user(SUDO_USERS) & filters.command(["pornspam"], prefixes=HNDLR))
+@Session3.on_message(filters.user(SUDO_USERS) & filters.command(["pornspam"], prefixes=HNDLR))
+@Session4.on_message(filters.user(SUDO_USERS) & filters.command(["pornspam"], prefixes=HNDLR))
+@Session5.on_message(filters.user(SUDO_USERS) & filters.command(["pornspam"], prefixes=HNDLR))
 async def pornspam(xspam: Client, e: Message): 
     counts = e.command[1]
     if not counts:
