@@ -10,7 +10,7 @@ from pyrogram.types import Message
 from ArrayCore import (OWNER_ID, LOGS_CHANNEL)
 from ArrayCore.resources import data
 usage = f"** ❌ Wrong Usage ❌**"
-from ArrayCore import Session, Session2, Session3, session4, Session5
+from ArrayCore import Session, Session2, Session3, Session4, Session5
 
 
 @Session.on_message(filters.user(SUDO_USERS) & filters.command(["delayspam"], prefixes=HNDLR))
