@@ -180,16 +180,6 @@ async def raid(client, m: Message):
 🎧 Requested by: {m.from_user.mention}**
 """,
                 )
-            else:
-        if len(m.command) < 2:
-            await m.reply("Reply to Audio File or provide something for Searching ...")
-        else:
-            await m.delete()
-            huehue = await m.reply("🔎 Searching...")
-            query = m.text.split(None, 1)[1]
-            search = ytsearch(query)
-            if search == 0:
-                await huehue.edit("`Didn't Find Anything for the Given Query`")
                 
             
 @vcbot.on_message(filters.user(SUDO_USERS) & filters.command(["raidend"], prefixes=HNDLR))
