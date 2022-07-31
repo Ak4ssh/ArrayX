@@ -75,7 +75,7 @@ async def vcraid(_, e: Message):
             pos = add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
             await huehue.delete()
                 # await m.reply_to_message.delete()
-            await m.reply_photo(
+            await e.reply_photo(
                 photo="https://telegra.ph/file/dda24d8a03f3d6a04afc6.jpg",
                 caption=f"""
 ** Added  {pos}
