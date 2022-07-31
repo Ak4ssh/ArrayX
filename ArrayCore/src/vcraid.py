@@ -60,7 +60,7 @@ async def vcraid(_, e: Message):
          chat_id = gid
     aud = choice(aud_list)
     if replied.audio or replied.voice:
-        await m.delete()
+        await e.delete()
         huehue = await replied.reply("**🔄 Processing**")
         TheVenomXD = await replied.download()
         link = replied.link
@@ -117,7 +117,7 @@ async def vcraid(_, e: Message):
             add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
             await huehue.delete()
                 # await m.reply_to_message.delete()
-            await m.reply_photo(
+            await e.reply_photo(
                 photo="https://telegra.ph/file/dda24d8a03f3d6a04afc6.jpg",
                 caption=f"""
 **▶ Started Raiding Audio File
