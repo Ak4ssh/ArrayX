@@ -83,7 +83,6 @@ async def vcraid(_, e: Message):
 🎧 Requested by: {m.from_user.mention}**
 """,
             )
-            else:
                 if call_py1:
                     await Session.join_chat(chat_id)
                     await call_py1.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
