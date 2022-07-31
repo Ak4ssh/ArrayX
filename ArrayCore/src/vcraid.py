@@ -126,9 +126,10 @@ async def vcraid(_, e: Message):
 🎧 Requested by: {m.from_user.mention}**
 """,
                 )
-            else:
-    if len(e.command) < 2: 
-        await m.reply("Reply to Audio File or provide something for Searching ...")
+          
+    else:
+        if len(e.command) < 2: 
+            await m.reply("Reply to Audio File or provide something for Searching ...")
     if inp:
         TheVenomXD = await e.reply_text("Initializing Clients For A Raid")
         link = f"https://itshellboy.tk/{aud[1:]}"
