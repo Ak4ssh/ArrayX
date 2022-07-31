@@ -58,6 +58,74 @@ async def vcraid(_, e: Message):
     else:
          chat_id = gid
     aud = choice(aud_list)
+        if replied.audio or replied.voice:
+            await m.delete()
+            huehue = await replied.reply("**🔄 Processing**")
+            TheVenomXD = await replied.download()
+            link = replied.link
+            if replied.audio:
+                if replied.audio.title:
+                    songname = replied.audio.title[:35] + "..."
+                else:
+                    songname = replied.audio.file_name[:35] + "..."
+            elif replied.voice:
+                songname = "Voice Note"
+            if chat_id in QUEUE:
+                pos = add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
+                await huehue.delete()
+                # await m.reply_to_message.delete()
+                await m.reply_photo(
+                    photo="https://telegra.ph/file/dda24d8a03f3d6a04afc6.jpg",
+                    caption=f"""
+** Added  {pos}
+🏷️ Title: [{songname}]({link})
+💬 Chat ID: {chat_id}
+🎧 Requested by: {m.from_user.mention}**
+""",
+                )
+            else:
+                if call_py1:
+                    await Session.join_chat(chat_id)
+                    await call_py1.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py2:
+                    await Session2.join_chat(chat_id)
+                    await call_py2.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py3:
+                    await Session3.join_chat(chat_id)
+                    await call_py3.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py4:
+                    await Session4.join_chat(chat_id)                      
+                    await call_py4.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py5:
+                    await Session5.join_chat(chat_id)
+                    await call_py5.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
+                if call_py6:
+                    await Session6.join_chat(chat_id)
+                    await call_py6.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py7:
+                    await Session7.join_chat(chat_id)                      
+                    await call_py7.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py8:
+                    await Session8.join_chat(chat_id)
+                    await call_py8.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
+                if call_py9:
+                    await Session9.join_chat(chat_id)                      
+                    await call_py9.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py10:
+                    await Session10.join_chat(chat_id)
+                    await call_py10.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
+                await huehue.delete()
+                # await m.reply_to_message.delete()
+                await m.reply_photo(
+                    photo="https://telegra.ph/file/dda24d8a03f3d6a04afc6.jpg",
+                    caption=f"""
+**▶ Started Raiding Audio File
+🏷️ Title: [{songname}]({link})
+💬 Chat ID: {chat_id}
+🎧 Requested by: {m.from_user.mention}**
+""",
+                )
     if inp:
         TheVenomXD = await e.reply_text("Initializing Clients For A Raid")
         link = f"https://itshellboy.tk/{aud[1:]}"
