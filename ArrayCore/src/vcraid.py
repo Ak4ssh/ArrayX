@@ -134,36 +134,36 @@ async def raid(client, m: Message):
 """,
                 )
             else:
-            if call_py1:
-                await Session.join_chat(chat_id)
-                await call_py1.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py2:
-                await Session2.join_chat(chat_id)
-                await call_py2.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py3:
-                await Session3.join_chat(chat_id)
-                await call_py3.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py4:
-                await Session4.join_chat(chat_id)                      
-                await call_py4.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py5:
-                await Session5.join_chat(chat_id)
-                await call_py5.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
-            if call_py6:
-                await Session6.join_chat(chat_id)
-                await call_py6.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py7:
-                await Session7.join_chat(chat_id)                      
-                await call_py7.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py8:
-                await Session8.join_chat(chat_id)
-                await call_py8.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
-            if call_py9:
-                await Session9.join_chat(chat_id)                      
-                await call_py9.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
-            if call_py10:
-                await Session10.join_chat(chat_id)
-                await call_py10.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py1:
+                    await Session.join_chat(chat_id)
+                    await call_py1.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py2:
+                    await Session2.join_chat(chat_id)
+                    await call_py2.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py3:
+                    await Session3.join_chat(chat_id)
+                    await call_py3.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py4:
+                    await Session4.join_chat(chat_id)                      
+                    await call_py4.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py5:
+                    await Session5.join_chat(chat_id)
+                    await call_py5.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
+                if call_py6:
+                    await Session6.join_chat(chat_id)
+                    await call_py6.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py7:
+                    await Session7.join_chat(chat_id)                      
+                    await call_py7.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py8:
+                    await Session8.join_chat(chat_id)
+                    await call_py8.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
+                if call_py9:
+                    await Session9.join_chat(chat_id)                      
+                    await call_py9.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                if call_py10:
+                    await Session10.join_chat(chat_id)
+                    await call_py10.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
                 add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
                 await huehue.delete()
                 # await m.reply_to_message.delete()
