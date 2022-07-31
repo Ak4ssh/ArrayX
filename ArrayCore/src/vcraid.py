@@ -109,7 +109,7 @@ async def raid(client, m: Message):
     if gid == uid:
         inp = m.text[8:]
         chat_ = await Session.get_chat(inp)
-        chat_id = chat_.id replied = m.reply_to_message
+        chat_id = chat_.id 
         replied = m.reply_to_message
     else:
          chat_id = gid
