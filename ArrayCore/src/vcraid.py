@@ -51,7 +51,7 @@ aud_list = [
 async def vcraid(_, e: Message):
     gid = e.chat.id
     uid = e.from_user.id
-    replied = m.reply_to_message
+    replied = e.reply_to_message
     if gid == uid:
         inp = e.text[8:]
         chat_ = await Session.get_chat(inp)
