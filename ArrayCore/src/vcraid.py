@@ -112,7 +112,6 @@ async def raid(client, m: Message):
         chat_ = await Session.get_chat(inp)
         chat_id = chat_.id
     else:
-         chat_id = gid
         if replied.audio or replied.voice:
             await m.delete()
             huehue = await replied.reply("**🔄 Processing**")
