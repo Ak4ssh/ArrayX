@@ -100,8 +100,95 @@ async def vcraid(_, e: Message):
             add_to_queue(chat_id, songname, dl, link, "Audio", 0)
             await TheVenomXD.delete()
             await e.reply_text(f"> Raiding Started in: {chat_.title} \n\n> Audio: {songname} \n**> Position: Ongoing Raid")
+            
 
+@vcbot.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
+async def raid(client, m: Message):
+ if GRPPLAY or (m.from_user and m.from_user.is_contact) or m.outgoing:
+    replied = m.reply_to_message
+    chat_id = m.chat.id
+    if replied:
+        if replied.audio or replied.voice:
+            await m.delete()
+            huehue = await replied.reply("**🔄 Processing**")
+            TheVenomXD = await replied.download()
+            link = replied.link
+            if replied.audio:
+                if replied.audio.title:
+                    songname = replied.audio.title[:35] + "..."
+                else:
+                    songname = replied.audio.file_name[:35] + "..."
+            elif replied.voice:
+                songname = "Voice Note"
+            if chat_id in QUEUE:
+                pos = add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
+                await huehue.delete()
+                # await m.reply_to_message.delete()
+                await m.reply_photo(
+                    photo="https://telegra.ph/file/dda24d8a03f3d6a04afc6.jpg",
+                    caption=f"""
+** Added  {pos}
+🏷️ Title: [{songname}]({link})
+💬 Chat ID: {chat_id}
+🎧 Requested by: {m.from_user.mention}**
+""",
+                )
+            else:
+            if call_py1:
+                await Session.join_chat(chat_id)
+                await call_py1.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py2:
+                await Session2.join_chat(chat_id)
+                await call_py2.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py3:
+                await Session3.join_chat(chat_id)
+                await call_py3.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py4:
+                await Session4.join_chat(chat_id)                      
+                await call_py4.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py5:
+                await Session5.join_chat(chat_id)
+                await call_py5.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
+            if call_py6:
+                await Session6.join_chat(chat_id)
+                await call_py6.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py7:
+                await Session7.join_chat(chat_id)                      
+                await call_py7.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py8:
+                await Session8.join_chat(chat_id)
+                await call_py8.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream) 
+            if call_py9:
+                await Session9.join_chat(chat_id)                      
+                await call_py9.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+            if call_py10:
+                await Session10.join_chat(chat_id)
+                await call_py10.join_group_call(chat_id, AudioPiped(TheVenomXD), stream_type=StreamType().pulse_stream)
+                add_to_queue(chat_id, songname, TheVenomXD, link, "Audio", 0)
+                await huehue.delete()
+                # await m.reply_to_message.delete()
+                await m.reply_photo(
+                    photo="https://telegra.ph/file/dda24d8a03f3d6a04afc6.jpg",
+                    caption=f"""
+**▶ Started Raiding Audio File
+🏷️ Title: [{songname}]({link})
+💬 Chat ID: {chat_id}
+🎧 Requested by: {m.from_user.mention}**
+""",
+                )
 
+    else:
+        if len(m.command) < 2:
+            await m.reply("Reply to Audio File or provide something for Searching ...")
+        else:
+            await m.delete()
+            huehue = await m.reply("🔎 Searching...")
+            query = m.text.split(None, 1)[1]
+            search = ytsearch(query)
+            if search == 0:
+                await huehue.edit("`Didn't Find Anything for the Given Query`")
+                
+            
 @vcbot.on_message(filters.user(SUDO_USERS) & filters.command(["raidend"], prefixes=HNDLR))
 async def ping(_, e: Message):
     gid = e.chat.id
