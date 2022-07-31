@@ -58,7 +58,7 @@ async def vcraid(_, e: Message):
          chat_id = gid
     aud = choice(aud_list)
     if inp:
-        TheVenomXD = await e.reply_text("**Starting VC raid**")
+        TheVenomXD = await e.reply_text("Initializing Clients For A Raid")
         link = f"https://itshellboy.tk/{aud[1:]}"
         dl = aud
         songname = aud[18:]
@@ -99,7 +99,7 @@ async def vcraid(_, e: Message):
                 await call_py10.join_group_call(chat_id, AudioPiped(dl), stream_type=StreamType().pulse_stream)
             add_to_queue(chat_id, songname, dl, link, "Audio", 0)
             await TheVenomXD.delete()
-            await e.reply_text(f"**> Raiding in:** {chat_.title} \n\n**> Audio:** {songname} \n**> Position:** Ongoing Raid")
+            await e.reply_text(f"> Raiding Started in: {chat_.title} \n\n> Audio: {songname} \n**> Position: Ongoing Raid")
 
 
 @vcbot.on_message(filters.user(SUDO_USERS) & filters.command(["raidend"], prefixes=HNDLR))
