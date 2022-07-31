@@ -55,6 +55,7 @@ async def vcraid(_, e: Message):
         inp = e.text[8:]
         chat_ = await Session.get_chat(inp)
         chat_id = chat_.id
+        replied = e.reply_to_message
     else:
          chat_id = gid
     aud = choice(aud_list)
