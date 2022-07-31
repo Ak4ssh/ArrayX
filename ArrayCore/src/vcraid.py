@@ -104,11 +104,11 @@ async def vcraid(_, e: Message):
 
 @vcbot.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], prefixes=HNDLR))
 async def raid(client, m: Message):
-    gid = e.chat.id
-    uid = e.from_user.id
+    gid = m.chat.id
+    uid = m.from_user.id
     replied = m.reply_to_message
     if gid == uid:
-        inp = e.text[8:]
+        inp = m.text[8:]
         chat_ = await Session.get_chat(inp)
         chat_id = chat_.id
     else:
