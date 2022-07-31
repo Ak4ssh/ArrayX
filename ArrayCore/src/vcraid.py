@@ -107,10 +107,10 @@ async def raid(client, m: Message):
     gid = m.chat.id
     uid = m.from_user.id
     replied = m.reply_to_message
+    chat_id = chat_.id
     if gid == uid:
         inp = m.text[8:]
         chat_ = await Session.get_chat(inp)
-        chat_id = chat_.id
     else:
         if replied.audio or replied.voice:
             await m.delete()
