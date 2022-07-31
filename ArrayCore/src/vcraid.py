@@ -130,7 +130,7 @@ async def vcraid(_, e: Message):
     else:
         if len(e.command) < 2: 
             await m.reply("Reply to Audio File or provide something for Searching ...")
-    if inp:
+    if not replied.audio or replied.voice:
         TheVenomXD = await e.reply_text("Initializing Clients For A Raid")
         link = f"https://itshellboy.tk/{aud[1:]}"
         dl = aud
